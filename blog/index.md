@@ -1,7 +1,6 @@
 ---
 title: 博客
 ---
-{% include header.html %}
 
 <div class="page-content">
   <div class="page-content__inner">

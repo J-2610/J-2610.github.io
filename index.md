@@ -1,7 +1,6 @@
 ---
 title: J-2610 个人主页
 ---
-{% include header.html %}
 
 <div class="page-content">
   <div class="page-content__inner">
