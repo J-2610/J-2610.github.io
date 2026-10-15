@@ -9,14 +9,15 @@ title: 博客
     <p>学习笔记与踩坑记录（持续更新中）</p>
 
     {% for post in site.posts %}
-      <div style="border-bottom:1px solid #e0e0e0; padding:16px 0;">
+      <div class="glass glass-purple">
         <h2 style="margin-bottom:8px;">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h2>
-        <p class="post-meta" style="color:#888; font-size:0.9em; margin-top:0;">
+        <p class="post-meta" style="font-size:0.85em; opacity:0.8; margin-top:0;">
           📅 {{ post.date | date: "%Y-%m-%d" }}
         </p>
-        <p>{{ post.excerpt | truncatewords: 80 }}</p>
+        <p>{{ post.excerpt | truncatewords: 60 }}</p>
+        <p><a class="glass-btn" href="{{ post.url }}">阅读全文 →</a></p>
       </div>
     {% endfor %}
 
