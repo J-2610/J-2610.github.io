@@ -1,32 +1,35 @@
 <style>
-  /* 自定义背景：暗色主题，保证文字可读 */
+  /* 背景完全显现：去掉遮罩和卡片底色 */
   body {
-    background-image: linear-gradient(rgba(10, 15, 28, 0.88), rgba(15, 22, 40, 0.92)), url('{{ site.baseurl }}/assets/bg.jpg');
+    background-image: url('{{ site.baseurl }}/assets/bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #e8ecf4;
+    color: #ffffff;
   }
-  /* 正文区块加半透明卡片，提升对比度（兼容 minimal 主题的实际类名） */
   .wrapper, .page-content, .page-content__inner, .main-content, .main-content__inner, .content {
-    background: rgba(13, 18, 32, 0.82);
-    border: 1px solid rgba(120, 150, 200, 0.25);
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
   .page-content, .page-content__inner, .main-content, .main-content__inner {
     padding: 28px 34px;
   }
   h1, h2, h3 {
-    color: #8fc7ff;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  p, li {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
   }
   a {
     color: #6db8ff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   }
   a:hover {
     color: #a9d4ff;
   }
   hr {
-    border-color: rgba(120, 150, 200, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
   }
 </style>
